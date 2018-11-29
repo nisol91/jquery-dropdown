@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: lightgrey;
+}
+.nav-bar {
+  background: black;
+  height: 100px;
+  text-align: center;
+}
+.nav-bar img {
+  float: left;
+  width: 150px;
+  margin: 20px 50px;
+}
+.nav-bar .nav-el {
+  float: right;
+  width: 130px;
+  height: 70px;
+  margin-top: 20px;
+}
+.nav-el:hover {
+  background: white;
+  border-radius: 5px;
+}
+.bianco {
+  background: white;
+  border-radius: 5px;
+}
+h2 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: 200;
+  position: relative;
+}
+h2:hover {
+  color: black;
+}
+.drop-elem {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  /* left: 650px; */
+  background: red;
+  border-radius: 5px;
+  display: none;
+  border-top: 5px solid white;
+}
+.active:hover {
+  background: lightcoral;
+  color: black;
+}
+.black-text {
+  color: black;
+}
+.open {
+  display: block;
+}
+.white {
+  color: white;
+}
+.botton-n {
+  float: right;
+  background: orange;
+  border: none;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-left: 10px;
+  padding-top: 15px;
+  width: 100px;
+  height: 50px;
+}
+.botton-n h2 {
+  color: white;
+  margin: 0;
+}
+.botton-n:hover {
+  filter: opacity(.5);
+  transition: 1s;
+}
+.menu-h {
+  display: none;
+}
+.h-m-cont {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .h-m{
+    color: grey;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .h-m-cont {
+    float: right;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .menu-h {
+    width: 100%;
+    height: 370px;
+    background: #1B3C59;
+    /* display: block; */
+    padding: 50px 30px
+  }
+  .x-x {
+    float: right;
+    color: lightgrey;
+    margin: 10px 10px;
+    font-size: 25px;
+  }
+  .nav-bar .nav-el, .nav-bar .botton-n {
+    display: none;
+  }
+  .menu-cont {
+    width: 150px;
+    height: 400px;
+    margin: auto;
+  }
+  .menu-cont h2 {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+  }
+  .menu-cont .nav-el:hover {
+    border-bottom: 2px solid white;
+  }
+  .attivo {
+    display: block;
+  }
+  .disattivo {
+    display: none;
+  }
+}
