@@ -53,10 +53,19 @@ h2:hover {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 90px;
+  top: 100px;
   background: rgb(221, 221, 221);
   border-radius: 5px;
   display: none;
+  box-shadow: 10px 10px 20px lightgrey;
+}
+.filler {
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  top: 90px;
+  background: transparent;
+  border-radius: 5px;
   box-shadow: 10px 10px 20px lightgrey;
 }
 /* .drop-elem::after {
@@ -84,9 +93,7 @@ h2:hover {
   display: none;
   box-shadow: 10px 10px 20px lightgrey;
 }
-.drop-elem-i:hover {
-  border-radius: 5px;
-}
+
 .drop-elem-i h2 {
   margin: 0;
 }

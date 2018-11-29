@@ -49,6 +49,8 @@ $('.drop-elem-i').mouseleave(function() {
   $(this).children('a').children('h2').children('i').addClass('black-text');
 });
 
+//fin qui serve per i colori del testo e freccette in hover
+
 $('.drop-i').mouseenter(function() {
   if ($(this).children('.drop-elem-ii').hasClass('open')) {
     $(this).children('.drop-elem-ii').slideUp();
