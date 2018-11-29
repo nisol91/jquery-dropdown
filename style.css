@@ -31,7 +31,7 @@ a {
   cursor: pointer;
 }
 .nav-el:hover {
-  background: white;
+  background: rgba(180, 180, 180, 0.55);
   border-radius: 5px;
 }
 .bianco {
@@ -57,6 +57,7 @@ h2:hover {
   background: rgb(221, 221, 221);
   border-radius: 5px;
   display: none;
+  box-shadow: 10px 10px 20px lightgrey;
 }
 /* .drop-elem::after {
   width: 150px;
@@ -74,13 +75,14 @@ h2:hover {
 }
 .drop-elem-ii {
   width: 150px;
-  height: 150px;
+  height: 100px;
   position: absolute;
   top: 0px;
   left: 150px;
   background: rgb(221, 221, 221);
   border-radius: 5px;
   display: none;
+  box-shadow: 10px 10px 20px lightgrey;
 }
 .drop-elem-i:hover {
   border-radius: 5px;
@@ -98,7 +100,10 @@ h2:hover {
 .drop-elem-i h2:hover {
   color: grey;
 }
-.drop-elem-i:nth-child(3) {
+.drop-elem .drop-elem-i:nth-child(3) {
+  border-bottom: none;
+}
+.drop-elem-ii .drop-elem-i:nth-child(2) {
   border-bottom: none;
 }
 .active:hover {
