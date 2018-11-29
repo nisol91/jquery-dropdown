@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 a {
   text-decoration: none;
@@ -10,16 +10,16 @@ a {
 .container {
   width: 100vw;
   height: 100vh;
-  background: lightgrey;
+  background: white;
 }
 .nav-bar {
-  background: black;
+  background: rgb(221, 221, 221);
   height: 100px;
   text-align: center;
 }
 .nav-bar img {
   float: left;
-  width: 150px;
+  width: 200px;
   margin: 20px 50px;
 }
 .nav-bar .nav-el {
@@ -27,17 +27,19 @@ a {
   width: 130px;
   height: 70px;
   margin-top: 20px;
+  margin-left: 50px;
+  cursor: pointer;
 }
 .nav-el:hover {
   background: white;
   border-radius: 5px;
 }
 .bianco {
-  background: white;
+  background: lightgrey;
   border-radius: 5px;
 }
 h2 {
-  font-size: 15px;
+  font-size: 12px;
   margin-top: 25px;
   margin-bottom: 5px;
   color: white;
@@ -45,28 +47,68 @@ h2 {
   position: relative;
 }
 h2:hover {
-  color: black;
+  color: grey;
 }
 .drop-elem {
   width: 150px;
-  height: 100px;
+  height: 150px;
   position: absolute;
-  top: 100px;
-  /* left: 650px; */
-  background: red;
+  top: 90px;
+  background: rgb(221, 221, 221);
   border-radius: 5px;
   display: none;
-  border-top: 5px solid white;
+}
+/* .drop-elem::after {
+  width: 150px;
+  height: 100px;
+  top: 200px;
+  background: blue;
+} */
+.drop-elem-i {
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  padding-top: 20px;
+  position: relative;
+}
+.drop-elem-ii {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  background: rgb(221, 221, 221);
+  border-radius: 5px;
+  display: none;
+}
+.drop-elem-i:hover {
+  border-radius: 5px;
+}
+.drop-elem-i h2 {
+  margin: 0;
+}
+.arrow {
+  margin-right: 10px;
+  color: white;
+  font-size: 15px;
+  float: right;
+  line-height: 50px;
+}
+.drop-elem-i h2:hover {
+  color: grey;
+}
+.drop-elem-i:nth-child(3) {
+  border-bottom: none;
 }
 .active:hover {
   background: lightcoral;
   color: black;
 }
 .black-text {
-  color: black;
+  color: grey;
 }
 .open {
-  display: block;
 }
 .white {
   color: white;
