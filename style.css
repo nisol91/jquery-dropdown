@@ -67,12 +67,6 @@ h2:hover {
   background: transparent;
   border-radius: 5px;
 }
-/* .drop-elem::after {
-  width: 150px;
-  height: 100px;
-  top: 200px;
-  background: blue;
-} */
 .drop-elem-i {
   border-bottom: 1px solid lightgrey;
   width: 100%;

@@ -17,9 +17,9 @@ $('.nav-el').mouseleave(function() {
     $(this).removeClass('open');//ovviamente la devo rimuovere per permettere di riaprirlo successivamente
     $(this).children('a').children('h2').removeClass('black-text');//il testo torna bianco
   } else {
-  $(this).children('a').children('h2').removeClass('black-text');//il testo torna bianco
-  $(this).children('.drop-elem').slideUp();//se tolgo il mouse dal div che contiene testo, bottone e drop, il drop si chiude
-  $(this).removeClass('open');//gli do la classe open, che mi serve per la parte in alto con l if
+    $(this).children('a').children('h2').removeClass('black-text');//il testo torna bianco
+    $(this).children('.drop-elem').slideUp();//se tolgo il mouse dal div che contiene testo, bottone e drop, il drop si chiude
+    $(this).removeClass('open');//gli do la classe open, che mi serve per la parte in alto con l if
   }
 });
 
@@ -27,6 +27,8 @@ $('.nav-el').mouseleave(function() {
 
 $('.nav-el').click(function() {
   $(this).children('.drop-elem').slideUp();
+
+//ho tolto questa parte perche' preferisco che si aprano i menu quando si va on hover e non sui click
 
   // if ($(this).hasClass('open')) {//questo if e' per richiudere il menu ricliccando sullo stesso, grazie alla class fittizia 'open' che ho dato.
   //   $(this).children('.drop-elem').slideUp();//ovvero: se il menu e' aperto e riclicco, si chiude
